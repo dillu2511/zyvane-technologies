@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zyvane-web
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      # - NEXT_PUBLIC_SITE_URL=https://www.zyvane.com
+    # Optional: If you need to map internal logs or public assets
+    # volumes:
+    #   - ./public:/app/public
