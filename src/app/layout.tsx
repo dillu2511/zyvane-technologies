@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { LoadingScreen } from "@/components/layout/loading-screen";
 import { JsonLd } from "@/components/seo/json-ld";
 import { GoogleAnalytics } from "@/components/seo/analytics";
+import { CommandMenu } from "@/components/layout/command-menu";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -121,6 +122,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LoadingScreen />
+          <CommandMenu />
           <Navbar />
           <main className="flex-grow pt-20">
             {children}
