@@ -46,7 +46,7 @@ export default function ContactPage() {
     }
   }, [logs]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setLogs(prev => [
@@ -56,16 +56,36 @@ export default function ContactPage() {
       "[network] Routing to Zyvane core servers...",
     ]);
     
-    // Simulate API delay
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          projectDetails: formData.project,
+        }),
+      });
+
+      if (!response.ok) throw new Error("API returned an error");
+
       setLogs(prev => [
         ...prev,
         "[server] 200 OK: Payload received and verified.",
+        "[server] Email dispatched via Resend.",
         "[system] Connection terminated securely.",
       ]);
-    }, 2000);
+      setSubmitted(true);
+    } catch (error) {
+      setLogs(prev => [
+        ...prev,
+        "[error] 500: Transmission failed. Target host unreachable.",
+        "[system] Connection aborted.",
+      ]);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
