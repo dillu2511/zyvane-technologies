@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// The Resend API key will be pulled from process.env.RESEND_API_KEY
-// Users should add this in their .env.local file.
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
+    // The Resend API key will be pulled from process.env.RESEND_API_KEY
+    // Users should add this in their .env.local file.
+    // Instantiate here so build doesn't fail if key is missing
+    const resend = new Resend(process.env.RESEND_API_KEY || "re_dummy");
+
     const { name, email, company, budget, timeline, projectDetails } = await req.json();
 
     // Basic validation
@@ -19,7 +20,7 @@ export async function POST(req: Request) {
     const { data, error } = await resend.emails.send({
       from: "Zyvane Terminal <onboarding@resend.dev>", // Uses resend test domain by default
       to: ["hello@zyvane.com"], // Replace with actual verified email domain later
-      reply_to: email,
+      replyTo: email,
       subject: `[NEW PAYLOAD] Project Inquiry from ${name || "Unknown"}`,
       html: `
         <div style="font-family: monospace; background: #000; color: #34D399; padding: 20px;">

@@ -36,13 +36,24 @@ export function CommandMenu() {
   }, []);
 
   const commands: CommandItem[] = [
-    { id: "home", name: "Go to Home", icon: Building, shortcut: "G H", section: "Navigation", action: () => { router.push("/"); setOpen(false); } },
-    { id: "services", name: "Go to Services", icon: Box, shortcut: "G S", section: "Navigation", action: () => { router.push("/services"); setOpen(false); } },
-    { id: "portfolio", name: "Go to Portfolio", icon: FileText, shortcut: "G P", section: "Navigation", action: () => { router.push("/portfolio"); setOpen(false); } },
-    { id: "contact", name: "Contact Engineering", icon: Phone, shortcut: "G C", section: "Navigation", action: () => { router.push("/contact"); setOpen(false); } },
-    { id: "sys1", name: "Deploy to Production", icon: Terminal, section: "System Commands", action: () => { console.log("Deployment initiated..."); setOpen(false); } },
-    { id: "sys2", name: "Clear System Cache", icon: Terminal, section: "System Commands", action: () => { console.log("Cache cleared."); setOpen(false); } },
+    { id: "home",      name: "Go to Home",                icon: Building,  shortcut: "G H", section: "Navigation", action: () => { router.push("/");                        setOpen(false); } },
+    { id: "about",     name: "Go to About",               icon: FileText,  shortcut: "G A", section: "Navigation", action: () => { router.push("/about");                   setOpen(false); } },
+    { id: "services",  name: "Go to Services",            icon: Box,       shortcut: "G S", section: "Navigation", action: () => { router.push("/services");                setOpen(false); } },
+    { id: "portfolio", name: "Go to Portfolio",           icon: FileText,  shortcut: "G P", section: "Navigation", action: () => { router.push("/portfolio");               setOpen(false); } },
+    { id: "pricing",   name: "Go to Pricing",             icon: Box,       shortcut: "G $", section: "Navigation", action: () => { router.push("/pricing");                 setOpen(false); } },
+    { id: "blog",      name: "Go to Blog",                icon: FileText,  section: "Navigation",                  action: () => { router.push("/blog");                    setOpen(false); } },
+    { id: "careers",   name: "Go to Careers",             icon: Building,  section: "Navigation",                  action: () => { router.push("/careers");                 setOpen(false); } },
+    { id: "contact",   name: "Contact Engineering",       icon: Phone,     shortcut: "G C", section: "Navigation", action: () => { router.push("/contact");                 setOpen(false); } },
+    { id: "ai",        name: "Service → AI Engineering",  icon: Terminal,  section: "Navigation",                  action: () => { router.push("/services/ai-engineering"); setOpen(false); } },
+    { id: "software",  name: "Service → Custom Software", icon: Box,       section: "Navigation",                  action: () => { router.push("/services/custom-software");setOpen(false); } },
+    { id: "devops",    name: "Service → Cloud & DevOps",  icon: Terminal,  section: "Navigation",                  action: () => { router.push("/services/devops");         setOpen(false); } },
+    { id: "health",    name: "Service → Healthcare Tech", icon: Box,       section: "Navigation",                  action: () => { router.push("/services/healthcare");     setOpen(false); } },
+    { id: "workflow",  name: "Service → Workflow Automation", icon: Terminal, section: "Navigation",               action: () => { router.push("/services/workflow-automation"); setOpen(false); } },
+    { id: "erp",       name: "Service → ERP & CRM",       icon: Box,       section: "Navigation",                  action: () => { router.push("/services/erp");            setOpen(false); } },
+    { id: "sys1",      name: "Deploy to Production",       icon: Terminal,  section: "System Commands",             action: () => { console.log("Deployment initiated...");  setOpen(false); } },
+    { id: "sys2",      name: "Clear System Cache",         icon: Terminal,  section: "System Commands",             action: () => { console.log("Cache cleared.");           setOpen(false); } },
   ];
+
 
   const filteredCommands = commands.filter((cmd) =>
     cmd.name.toLowerCase().includes(query.toLowerCase())
