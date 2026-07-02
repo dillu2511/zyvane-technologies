@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     // We send this TO the company owner (hello@zyvane.com or user's email)
     const { data, error } = await resend.emails.send({
       from: "Zyvane Terminal <onboarding@resend.dev>", // Uses resend test domain by default
-      to: ["hello@zyvane.com"], // Replace with actual verified email domain later
+      to: ["rajukumar87589@gmail.com"], // Contact form submissions will go here
       replyTo: email,
       subject: `[NEW PAYLOAD] Project Inquiry from ${name || "Unknown"}`,
       html: `
