@@ -11,7 +11,7 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      # - NEXT_PUBLIC_SITE_URL=https://www.zyvane.com
+      - NEXT_PUBLIC_SITE_URL=https://www.zyvanetechnologies.com
     # Optional: If you need to map internal logs or public assets
     # volumes:
     #   - ./public:/app/public
