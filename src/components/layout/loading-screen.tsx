@@ -35,20 +35,13 @@ export function LoadingScreen() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative z-10 flex flex-col items-center gap-6"
           >
-            <div className="w-16 h-16 bg-brand-secondary rounded-2xl flex items-center justify-center shadow-2xl shadow-brand-secondary/20 relative overflow-hidden">
-              <motion.div 
-                className="absolute inset-0 bg-gradient-to-tr from-brand-secondary to-brand-accent opacity-50"
-                animate={{ 
-                  backgroundPosition: ['0% 0%', '100% 100%']
-                }}
-                transition={{ 
-                  duration: 2, 
-                  repeat: Infinity, 
-                  repeatType: "mirror" 
-                }}
-              />
-              <span className="text-white font-bold text-4xl leading-none relative z-10">Z</span>
-            </div>
+            <motion.div
+              className="w-20 h-20 rounded-2xl overflow-hidden shadow-2xl shadow-brand-secondary/30"
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <img src="/logo.png" alt="Zyvane Technologies" className="w-full h-full object-cover" />
+            </motion.div>
             
             <div className="w-48 h-1 bg-muted rounded-full overflow-hidden">
               <motion.div 

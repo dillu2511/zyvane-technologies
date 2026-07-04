@@ -51,9 +51,13 @@ export function Footer() {
           {/* Brand & Terminal Mock */}
           <div className="lg:col-span-3 pr-0 lg:pr-12">
             <Link href="/" className="flex items-center gap-3 mb-8 group w-fit">
-              <div className="w-10 h-10 bg-[#6366F1] rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform shadow-[0_0_20px_rgba(99,102,241,0.4)]">
-                <span className="text-white font-black text-2xl leading-none">Z</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="Zyvane Technologies"
+                width={44}
+                height={44}
+                className="rounded-xl transform group-hover:scale-105 transition-transform"
+              />
               <span className="text-3xl font-black tracking-tighter text-white">ZYVANE</span>
             </Link>
             

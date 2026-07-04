@@ -154,6 +154,12 @@ export function Navbar() {
           <X className="h-5 w-5" />
         </button>
 
+        {/* Mobile menu logo */}
+        <Link href="/" onClick={() => setIsOpen(false)} className="absolute top-5 left-5 flex items-center gap-2">
+          <img src="/logo.png" alt="Zyvane Technologies" width={32} height={32} className="rounded-lg" />
+          <span className="font-bold text-base tracking-tight text-foreground">Zyvane</span>
+        </Link>
+
         <div className="space-y-1">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/50 mb-3 px-2">Services</p>
           {SERVICES.map((s) => {
