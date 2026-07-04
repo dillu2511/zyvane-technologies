@@ -63,13 +63,16 @@ export function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-            <motion.div
-              whileHover={{ rotate: 10, scale: 1.05 }}
-              className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#6366F1] to-[#38BDF8] flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.4)]"
-            >
-              <span className="text-white font-black text-base leading-none">Z</span>
+            <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2.5">
+              <img
+                src="/logo.png"
+                alt="Zyvane Technologies"
+                width={36}
+                height={36}
+                className="rounded-lg"
+              />
+              <span className="font-bold text-lg tracking-tight text-foreground">Zyvane</span>
             </motion.div>
-            <span className="font-bold text-lg tracking-tight text-foreground">Zyvane</span>
           </Link>
 
           {/* Desktop Nav */}
