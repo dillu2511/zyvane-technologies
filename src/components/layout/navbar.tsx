@@ -117,9 +117,15 @@ export function Navbar() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400" />
               </span>
-              <span>Open to work</span>
+              <span>Zyvane OS: Online</span>
             </div>
 
+            <Link
+              href="/portal"
+              className="inline-flex items-center h-9 px-4 rounded-full border border-border bg-background/60 hover:bg-muted text-foreground text-sm font-semibold transition-all duration-200"
+            >
+              Client Portal
+            </Link>
             <Link
               href="/contact"
               className="inline-flex items-center h-9 px-5 rounded-full bg-[#6366F1] hover:bg-[#5253D4] text-white text-sm font-semibold transition-all duration-200 hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] hover:-translate-y-px"
@@ -264,7 +270,7 @@ function AnimatedDropdown({
       </div>
       {/* Footer */}
       <div className="px-4 py-3 border-t border-border/50 bg-muted/10 flex items-center justify-between">
-        <span className="text-xs text-muted-foreground/60">All services built in-house, no outsourcing.</span>
+        <span className="text-xs text-muted-foreground/60">Powered by the proprietary Zyvane Core architecture.</span>
         <Link href="/services" className="text-xs font-semibold text-[#6366F1] hover:underline">
           View all →
         </Link>

@@ -7,16 +7,16 @@ import { ArrowRight } from "lucide-react";
 
 // Terminal lines that type themselves out — real tech, real feel
 const TERMINAL_LINES = [
-  { prefix: "zyvane", cmd: "init --enterprise --ai-ready", color: "#6366F1" },
-  { prefix: "system", cmd: "Scanning project requirements...", color: "#38BDF8" },
-  { prefix: "arch", cmd: "Designing scalable microservice topology", color: "#34D399" },
-  { prefix: "ai", cmd: "Training domain-specific model pipeline", color: "#F59E0B" },
-  { prefix: "deploy", cmd: "Shipping to production. Zero downtime.", color: "#6366F1" },
-  { prefix: "status", cmd: "✓ System live. Client value: delivered.", color: "#34D399" },
+  { prefix: "zyvane", cmd: "os deploy --client-id=NEW_PROJECT", color: "#6366F1" },
+  { prefix: "system", cmd: "Allocating autonomous infrastructure...", color: "#38BDF8" },
+  { prefix: "arch", cmd: "Injecting self-healing microservices", color: "#34D399" },
+  { prefix: "ai", cmd: "Initializing predictive scale engines", color: "#F59E0B" },
+  { prefix: "deploy", cmd: "System online. Real-time telemetry active.", color: "#6366F1" },
+  { prefix: "status", cmd: "✓ Zyvane Core injected. Client value: unlocked.", color: "#34D399" },
 ];
 
 // Words that cycle in the headline
-const CYCLING_WORDS = ["Intelligence.", "Systems.", "Products.", "Scale."];
+const CYCLING_WORDS = ["Infrastructure.", "Scale.", "Systems.", "Software."];
 
 function TerminalBlock() {
   const [visibleLines, setVisibleLines] = useState<number[]>([]);
@@ -193,7 +193,7 @@ export function Hero() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#34D399]" />
               </span>
               <span className="text-xs font-semibold tracking-widest uppercase text-[#34D399]">
-                Accepting Projects
+                Zyvane OS v2.0 Live
               </span>
             </motion.div>
 
@@ -204,7 +204,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-foreground mb-6">
-                Engineering
+                Autonomous
                 <br />
                 <CyclingWord />
               </h1>
@@ -217,8 +217,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md mb-10"
             >
-              We architect and ship enterprise software — AI pipelines, cloud systems, 
-              and full-stack products — for companies that refuse to compromise on quality.
+              We don&apos;t just build your app. We install your business onto the Zyvane Engine—a living, self-optimizing infrastructure platform.
             </motion.p>
 
             {/* CTAs */}
@@ -232,14 +231,14 @@ export function Hero() {
                 href="/contact"
                 className="group inline-flex items-center justify-center gap-2 h-13 px-7 rounded-full bg-[#6366F1] hover:bg-[#5253D4] text-white font-semibold text-sm transition-all duration-200 shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:shadow-[0_0_50px_rgba(99,102,241,0.6)] hover:-translate-y-0.5"
               >
-                Start a Project
+                Deploy on Zyvane OS
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center gap-2 h-13 px-7 rounded-full border border-border bg-background/60 hover:bg-muted text-foreground font-semibold text-sm transition-all duration-200 backdrop-blur-sm hover:-translate-y-0.5"
               >
-                View Capabilities
+                Explore the Engine
               </Link>
             </motion.div>
 
@@ -273,9 +272,9 @@ export function Hero() {
             {/* Mini floating stats below terminal */}
             <div className="mt-5 grid grid-cols-3 gap-3">
               {[
-                { label: "Response Time", value: "< 24h" },
-                { label: "Tech Stack", value: "Modern" },
-                { label: "Code Quality", value: "Tested" },
+                { label: "Architecture", value: "Autonomous" },
+                { label: "Delivery", value: "Hyper-Fast" },
+                { label: "Maintenance", value: "Self-Healing" },
               ].map((item) => (
                 <div
                   key={item.label}
