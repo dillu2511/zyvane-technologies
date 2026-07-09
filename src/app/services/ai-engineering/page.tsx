@@ -93,7 +93,7 @@ export default function AIEngineeringPage() {
               href="/contact"
               className="group inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#6366F1] hover:bg-[#5253D4] text-white font-bold text-base transition-all duration-200 shadow-[0_0_40px_rgba(99,102,241,0.4)] hover:shadow-[0_0_60px_rgba(99,102,241,0.6)] hover:-translate-y-0.5"
             >
-              Discuss Your AI Project
+              Initialize Deployment
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link

@@ -90,7 +90,7 @@ export default function HealthcarePage() {
               href="/contact"
               className="group inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#F43F5E] hover:bg-[#e11d48] text-white font-bold text-base transition-all duration-200 shadow-[0_0_40px_rgba(244,63,94,0.35)] hover:shadow-[0_0_60px_rgba(244,63,94,0.55)] hover:-translate-y-0.5"
             >
-              Discuss Your Healthcare Product
+              Initialize Deployment
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link

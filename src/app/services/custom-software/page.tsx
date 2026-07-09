@@ -77,12 +77,12 @@ export default function CustomSoftwarePage() {
         >
           <div className="flex items-center gap-3 mb-8">
             <div className="w-12 h-[1px] bg-[#34D399]" />
-            <span className="text-[#34D399] font-mono text-sm tracking-widest uppercase">Custom Software</span>
+            <span className="text-[#34D399] font-mono text-sm tracking-widest uppercase">Custom Modules</span>
           </div>
 
           <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-[#34D399]/30 bg-[#34D399]/5 text-sm font-semibold text-[#34D399] w-max">
             <Code2 className="h-4 w-4" />
-            Custom Enterprise Software
+            Custom Core Injection
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[1.08] mb-8">
@@ -93,7 +93,7 @@ export default function CustomSoftwarePage() {
           </h1>
 
           <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl font-medium mb-10">
-            Off-the-shelf software doesn&apos;t scale with unique business logic. We engineer bespoke web and backend applications — owned entirely by you — that power core operations for companies that cannot afford to compromise.
+            Off-the-shelf software doesn&apos;t scale with unique business logic. We inject the pre-architected Zyvane OS core and engineer bespoke logic on top — owned entirely by you — powering operations for companies that cannot afford to compromise.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -101,7 +101,7 @@ export default function CustomSoftwarePage() {
               href="/contact"
               className="group inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#34D399] hover:bg-[#10b981] text-black font-bold text-base transition-all duration-200 shadow-[0_0_40px_rgba(52,211,153,0.35)] hover:shadow-[0_0_60px_rgba(52,211,153,0.55)] hover:-translate-y-0.5"
             >
-              Discuss Your Project
+              Initialize Deployment
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
@@ -124,9 +124,9 @@ export default function CustomSoftwarePage() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6">Technical Superiority</h2>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6">OS Architecture Superiority</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our engineering methodology ensures that your software is not just functional, but resilient, maintainable, and built for 10x growth from day one.
+              Our injection methodology ensures that your software is not just functional, but resilient, maintainable, and built for 10x growth from day one.
             </p>
           </motion.div>
 
@@ -173,7 +173,7 @@ export default function CustomSoftwarePage() {
             className="max-w-3xl mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6">
-              What we typically build
+              Typical Module Injections
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Every project is unique, but these are the categories where we have the deepest track record.

@@ -53,7 +53,7 @@ export default function ContactPage() {
       ...prev, 
       "[system] Commencing data transmission payload...",
       "[network] Encrypting with AES-GCM...",
-      "[network] Routing to Zyvane core servers...",
+      "[network] Routing to Zyvane OS core...",
     ]);
     
     try {
@@ -104,7 +104,7 @@ export default function ContactPage() {
               Initialize <br /> <span className="text-[#6366F1]">Connection.</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed font-medium">
-              Bypass the red tape. Speak directly with our lead engineers to architect your next high-performance system.
+              Bypass the red tape. Speak directly with our lead engineers to architect your Zyvane OS injection.
             </p>
 
             <motion.div 

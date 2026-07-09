@@ -4,14 +4,14 @@ import { ArrowRight, Brain, Code2, GitMerge, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Careers | Zyvane Technologies",
-  description: "Join the Zyvane Technologies engineering team. We hire exceptional engineers who care about craft, scale, and honesty.",
+  description: "Join the Zyvane Technologies engineering team. We hire exceptional core engineers who build autonomous infrastructure.",
 };
 
 const VALUES = [
   {
     icon: <Code2 className="h-6 w-6" />,
     title: "Engineering First",
-    desc: "We are engineers solving hard problems — not consultants generating deliverables. You will architect, build, and own real production systems.",
+    desc: "We are OS architects solving hard problems — not consultants generating deliverables. You will engineer, inject, and scale autonomous production systems.",
     accent: "#6366F1",
   },
   {
@@ -64,7 +64,7 @@ export default function CareersPage() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl font-medium">
-              We are a small team of engineers who care deeply about clean code, scalable architecture, and honest communication. We work on genuinely hard problems for clients who are building something meaningful. If that resonates with you, we would love to talk.
+              We are a small team of infrastructure architects who care deeply about autonomous code, scalable deployments, and honest communication. We build Zyvane OS modules for enterprises that are building something meaningful. If that resonates with you, we would love to talk.
             </p>
           </div>
         </div>
