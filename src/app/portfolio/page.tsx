@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Activity, Database, Server, Cpu } from "lucide-react";
+import { ArrowRight, Activity, Database, Server, Cpu, Zap } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 
@@ -41,6 +41,19 @@ const CASE_STUDIES = [
     solution: "We architected an event-driven streaming pipeline. Every transaction is pushed to Kafka and processed by a Rust-based microservice that queries a Redis feature store and runs inference via a quantized PyTorch model. We catch fraud before the payment gateway accepts it.",
     icon: <Cpu className="w-6 h-6 text-[#34D399]" />,
     gradient: "from-[#34D399]/20 to-transparent"
+  },
+  {
+    id: "04",
+    client: "TypeMastery.in",
+    title: "Real-time Keystroke Analytics Engine",
+    metric: "< 5ms",
+    metricLabel: "Keystroke Latency",
+    tags: ["Next.js", "WebSockets", "Node.js", "Redis", "ClickHouse"],
+    problem: "The platform required a low-latency infrastructure capable of handling thousands of concurrent typing tests, processing keystroke telemetry, and calculating WPM and accuracy metrics without visual lag.",
+    solution: "We engineered an edge-optimized architecture. React handles local state for 0ms input lag, while keystroke telemetry is batched and streamed via WebSockets to a Node.js microservice. Aggregated analytics are persisted in ClickHouse for real-time leaderboards and historical tracking.",
+    icon: <Zap className="w-6 h-6 text-[#A78BFA]" />,
+    gradient: "from-[#A78BFA]/20 to-transparent",
+    link: "https://typemastery.in/"
   }
 ];
 
@@ -148,6 +161,19 @@ export default function PortfolioPage() {
                         {study.solution}
                       </p>
                     </div>
+
+                    {study.link && (
+                      <div className="mt-8 pt-8 border-t border-white/10">
+                        <a 
+                          href={study.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium transition-colors group"
+                        >
+                          Initialize Live Connection <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
 
