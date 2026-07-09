@@ -5,28 +5,28 @@ import { CheckCircle2 } from "lucide-react";
 
 const advantages = [
   {
-    title: "Zero Technical Debt",
-    desc: "We enforce strict code quality standards, comprehensive testing, and modern architectural patterns from day one."
+    title: "Self-Healing Codebase",
+    desc: "Zyvane OS monitors itself. Built-in telemetry detects failing services and automatically restarts or routes traffic away before users notice."
   },
   {
-    title: "Predictable Delivery",
-    desc: "No missed deadlines. Our agile process provides full transparency with weekly deliverables and clear milestones."
+    title: "Instant Materialization",
+    desc: "Don't wait 6 months. Our core modules are pre-architected to deploy on Day 1, allowing us to focus entirely on your unique business logic."
   },
   {
-    title: "Security by Design",
-    desc: "Enterprise-grade encryption, role-based access control, and proactive vulnerability scanning built into every layer."
+    title: "Predictive Scaling",
+    desc: "Built on containerized orchestration, your infrastructure automatically scales up during traffic spikes and scales down to save costs."
   },
   {
-    title: "Elastic Scalability",
-    desc: "Systems designed to handle 10x growth without architectural rewrites, utilizing cloud-native orchestration."
+    title: "Zero Vendor Lock-in",
+    desc: "You own the underlying IP. We build on open-source standards like Kubernetes, PostgreSQL, and Node.js so you can leave anytime."
   },
   {
-    title: "AI-Native Engineering",
-    desc: "We don't just bolt on AI. We architect systems that leverage machine learning as a core capability."
+    title: "AI-Native by Default",
+    desc: "Every instance of Zyvane OS is wired for AI. Ready to ingest your private data securely and deploy intelligent agents instantly."
   },
   {
-    title: "Dedicated Elite Teams",
-    desc: "No juniors. No hand-offs. You get direct access to senior architects and engineers committed to your success."
+    title: "Continuous Evolution",
+    desc: "Software decays. Zyvane OS evolves. Our engineers actively push security patches, performance upgrades, and new modules to your instance."
   }
 ];
 

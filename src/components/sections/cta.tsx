@@ -23,23 +23,23 @@ export function CTA() {
         >
           <div className="mb-6 flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-sm font-medium text-white">
             <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
-            Accepting new enterprise partners
+            System Online: Ready for Deployment
           </div>
           
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-            Ready to scale your <br />
+            Ready to deploy your <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-secondary to-brand-accent">
-              engineering capacity?
+              autonomous infrastructure?
             </span>
           </h2>
           
           <p className="text-xl text-white/70 mb-12 max-w-2xl leading-relaxed">
-            Stop losing time on technical debt and missed deadlines. Partner with Zyvane to build software that drives your business forward.
+            Stop losing time on technical debt and endless agency sprints. Inject Zyvane OS into your business today.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Button size="lg" className="h-14 px-8 text-base bg-white text-brand-primary hover:bg-white/90 rounded-full group w-full sm:w-auto">
-              Schedule a Consultation
+              Initialize Deployment
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button size="lg" variant="outline" className="h-14 px-8 text-base rounded-full border-white/20 hover:bg-white/10 text-white w-full sm:w-auto">

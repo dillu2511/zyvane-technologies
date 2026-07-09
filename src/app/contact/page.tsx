@@ -106,6 +106,26 @@ export default function ContactPage() {
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed font-medium">
               Bypass the red tape. Speak directly with our lead engineers to architect your next high-performance system.
             </p>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="mt-8 flex flex-col sm:flex-row gap-6 text-sm text-muted-foreground/80 font-mono"
+            >
+              <div>
+                <strong className="text-foreground block mb-1">Official Registry</strong>
+                UDYAM-DL-11-0164014
+              </div>
+              <div>
+                <strong className="text-foreground block mb-1">Headquarters</strong>
+                168 C, Nangloi, Ashok Maholla<br />New Delhi 110041
+              </div>
+              <div>
+                <strong className="text-foreground block mb-1">Direct Line</strong>
+                hello@zyvane.com<br />+91 7678483708
+              </div>
+            </motion.div>
           </motion.div>
         </div>
 

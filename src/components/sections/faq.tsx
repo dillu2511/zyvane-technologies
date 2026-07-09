@@ -9,24 +9,24 @@ import {
 
 const faqs = [
   {
-    question: "What is your typical engagement model?",
-    answer: "We offer dedicated engineering teams for long-term strategic projects, as well as fixed-scope engagements for well-defined deliverables. We prioritize deep integration with your internal stakeholders to ensure alignment with business objectives."
+    question: "What exactly is Zyvane OS?",
+    answer: "It is a proprietary collection of pre-architected software modules (Auth, Payments, AI, Databases) that we inject into your business. Instead of paying an agency to build these from scratch over 6 months, we deploy them instantly and focus on your unique business logic."
   },
   {
-    question: "Do you maintain the software after launch?",
-    answer: "Yes. We provide comprehensive SLA-backed maintenance and support packages, including 24/7 monitoring, security patching, and continuous feature development to ensure your software evolves with your business."
+    question: "How does the pricing work?",
+    answer: "We operate on a two-phase model. Phase 1 is a fixed Build Fee for the initial setup and customization of your Zyvane OS instance. Phase 2 is the Evolution Retainer, a flat monthly subscription where we handle all server costs, security patches, scaling, and feature updates."
   },
   {
-    question: "How do you handle intellectual property (IP)?",
-    answer: "You own 100% of the IP, including all source code, assets, and documentation. This is strictly enforced through our Master Services Agreement (MSA) from day one."
+    question: "Do I own the code?",
+    answer: "Yes. Once the Phase 1 build is paid in full, you own 100% of the IP, including the customized Zyvane OS modules. You are never locked into our ecosystem."
   },
   {
-    question: "How long does a typical enterprise project take?",
-    answer: "While timelines vary based on complexity, most MVPs or V1 releases take between 3 to 6 months. We utilize agile sprints to deliver functional software every two weeks, ensuring continuous visibility and value generation."
+    question: "Why not just hire developers?",
+    answer: "Hiring a senior architect, DevOps engineer, frontend developer, and QA costs over $500k/year. They will spend the first 3 months just arguing about tech stacks and building basic login screens. We skip that phase entirely."
   },
   {
-    question: "What is your approach to AI integration and data privacy?",
-    answer: "We deploy AI models (including proprietary LLMs) within your secure cloud environment (VPC). Your data is never used to train public models. We enforce strict data governance and compliance with standards like GDPR, SOC2, and HIPAA."
+    question: "What is your approach to AI and Data Privacy?",
+    answer: "We deploy AI models (including proprietary LLMs) within your secure, isolated cloud environment. Your private data is never used to train public models. We enforce strict data governance and compliance with global standards."
   }
 ];
 
@@ -39,7 +39,7 @@ export function FAQ() {
             Frequently Asked <span className="text-brand-secondary">Questions.</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Clear answers to common questions about our process, security, and partnership model.
+            Clear answers about our autonomous infrastructure model and pricing structure.
           </p>
         </div>
 

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 
 const MANIFESTO_LINES = [
@@ -119,10 +118,10 @@ export default function AboutPage() {
                 Transparent Partnerships
               </h3>
               <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-                We do not disappear into a black box for 6 months and emerge with something you didn't ask for. We build in the open.
+                We do not disappear into a black box for 6 months and emerge with something you didn&apos;t ask for. We build in the open.
               </p>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                You get direct access to the engineers writing your code via Slack, weekly sprint demos, and raw honesty if an idea won't work. We are your technical co-founders on demand.
+                You get direct access to the engineers writing your code via Slack, weekly sprint demos, and raw honesty if an idea won&apos;t work. We are your technical co-founders on demand.
               </p>
             </motion.div>
             

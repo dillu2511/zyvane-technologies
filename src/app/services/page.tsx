@@ -17,10 +17,10 @@ export default function ServicesPage() {
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-              Capabilities.
+              The OS <span className="text-brand-secondary">Modules.</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              We architect and build scalable, intelligent software systems for forward-thinking enterprises.
+              We do not build from scratch. We deploy autonomous modules and layer your unique business logic on top.
             </p>
           </div>
         </div>

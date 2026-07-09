@@ -3,12 +3,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", title: "Discovery", desc: "Deep dive into your business logic, technical constraints, and scaling requirements." },
-  { num: "02", title: "Architecture", desc: "System design, database modeling, and technology selection for optimal performance." },
-  { num: "03", title: "Development", desc: "Agile engineering with rigorous code reviews, automated testing, and CI/CD." },
-  { num: "04", title: "Quality Assurance", desc: "Comprehensive security audits, load testing, and edge-case validation." },
-  { num: "05", title: "Deployment", desc: "Zero-downtime deployment to production cloud environments." },
-  { num: "06", title: "Scale & Support", desc: "24/7 monitoring, SLA-backed maintenance, and feature iterations." },
+  { num: "01", title: "System Audit", desc: "We analyze your legacy architecture and map the exact requirements for the Zyvane OS injection." },
+  { num: "02", title: "Core Materialization (Phase 1)", desc: "We deploy the pre-architected Zyvane core modules, establishing your secure foundational infrastructure instantly." },
+  { num: "03", title: "Business Logic Injection", desc: "Our elite engineers build the unique custom features and workflows specific to your business on top of the OS layer." },
+  { num: "04", title: "Autonomous Evolution (Phase 2)", desc: "Your system enters the evolution phase. We continuously monitor, scale, and push AI/security updates to your instance." },
 ];
 
 export function DevelopmentProcess() {
@@ -17,10 +15,10 @@ export function DevelopmentProcess() {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-            Engineering <span className="text-brand-secondary">discipline.</span>
+            Deployment <span className="text-brand-secondary">protocol.</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            We don't guess. We follow a battle-tested engineering methodology that guarantees enterprise-grade results on time and on budget.
+            We don&apos;t do &quot;sprints&quot; or endless discovery phases. We inject a production-ready infrastructure and evolve it autonomously.
           </p>
         </div>
 
@@ -28,7 +26,7 @@ export function DevelopmentProcess() {
           {/* Connecting Line */}
           <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-border -z-10" />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <motion.div
                 key={step.num}

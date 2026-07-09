@@ -111,16 +111,16 @@ export function ServicesOverview() {
       <div className="container mx-auto px-6 mb-14">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">What we do</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">Zyvane Core Architecture</p>
             <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-foreground max-w-md">
-              Built for teams that{" "}
+              The Engine that{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366F1] to-[#38BDF8]">
-                don&apos;t compromise.
+                powers it all.
               </span>
             </h2>
           </div>
           <p className="text-muted-foreground max-w-xs text-sm leading-relaxed md:text-right">
-            Every engagement is a product. We design, architect, and ship — with full ownership transferred to you.
+            Instead of building from scratch, we inject these autonomous modules directly into your business infrastructure.
           </p>
         </div>
       </div>

@@ -124,8 +124,10 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-foreground">8. Contact</h2>
+              <h2 className="text-2xl font-bold mb-4 text-foreground">8. Contact & Legal Entity</h2>
               <p className="text-muted-foreground leading-relaxed">
+                Zyvane Technologies is a registered MSME under the Government of India (UDYAM-DL-11-0164014).<br/>
+                Registered Address: 168 C, Nangloi, Ashok Maholla Gali No 6, New Delhi 110041.<br/><br/>
                 For any privacy-related questions or requests, contact us at{" "}
                 <a href="mailto:privacy@zyvane.com" className="text-[#6366F1] hover:underline">
                   privacy@zyvane.com

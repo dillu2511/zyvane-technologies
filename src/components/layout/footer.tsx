@@ -123,9 +123,14 @@ export function Footer() {
         
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground font-mono">
-            © {new Date().getFullYear()} ZYVANE TECHNOLOGIES. ALL RIGHTS RESERVED.
-          </p>
+          <div className="flex flex-col gap-1">
+            <p className="text-xs text-muted-foreground font-mono">
+              © {new Date().getFullYear()} ZYVANE TECHNOLOGIES. ALL RIGHTS RESERVED.
+            </p>
+            <p className="text-[10px] text-muted-foreground/60 font-mono">
+              MSME Registered: UDYAM-DL-11-0164014 | 168 C, Nangloi, New Delhi 110041
+            </p>
+          </div>
           
           <div className="flex items-center gap-4">
             <span className="text-xs text-muted-foreground font-mono hidden md:inline-block mr-4">

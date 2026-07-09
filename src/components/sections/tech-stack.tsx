@@ -36,11 +36,10 @@ export function TechStack() {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-            Modern stack. <br />
-            <span className="text-muted-foreground">Limitless capabilities.</span>
+            The OS <span className="text-muted-foreground">Architecture.</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            We select the right tools for the job, favoring technologies with strong ecosystems, high performance, and proven enterprise scalability.
+            Zyvane OS is built on a battle-tested foundation of open-source primitives. No black boxes. Complete transparency and enterprise scalability.
           </p>
         </div>
 

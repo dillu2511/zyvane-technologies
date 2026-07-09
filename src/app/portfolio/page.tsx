@@ -65,11 +65,11 @@ export default function PortfolioPage() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[1.1] mb-8">
-            Proof of <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Execution.</span>
+            Deployments in <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Production.</span>
           </h1>
           
           <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl font-medium">
-            We don't build standard websites. We architect high-performance systems for enterprises that cannot afford failure. Here is how we solve complex engineering problems.
+            We don&apos;t build standard websites. We inject Zyvane OS into enterprises that cannot afford failure. Here is how our modules scale under pressure.
           </p>
         </motion.div>
       </section>
@@ -77,7 +77,7 @@ export default function PortfolioPage() {
       {/* Case Studies */}
       <section className="pb-32 relative z-10">
         <div className="container mx-auto px-6 space-y-32">
-          {CASE_STUDIES.map((study, index) => (
+          {CASE_STUDIES.map((study) => (
             <motion.div 
               key={study.id}
               initial={{ opacity: 0, y: 40 }}
@@ -142,7 +142,7 @@ export default function PortfolioPage() {
                     <div className="relative pl-6 border-l border-[#6366F1]/30">
                       <div className="absolute top-0 -left-[5px] w-2 h-2 rounded-full bg-[#6366F1]" />
                       <h3 className="text-sm font-bold uppercase tracking-widest text-[#6366F1] mb-4 flex items-center gap-2">
-                        <Database className="w-4 h-4" /> The Architecture
+                        <Database className="w-4 h-4" /> Zyvane OS Injection
                       </h3>
                       <p className="text-lg text-muted-foreground leading-relaxed">
                         {study.solution}
@@ -160,13 +160,13 @@ export default function PortfolioPage() {
       {/* CTA */}
       <section className="py-32 bg-[#0a0a0a] border-t border-border/40 relative z-10 text-center">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-5xl font-black mb-6">Require a similar architecture?</h2>
+          <h2 className="text-3xl md:text-5xl font-black mb-6">Ready for your own OS deployment?</h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Bring us your most complex technical debt or scaling challenge. We will architect a solution within 48 hours.
+            Bring us your most complex technical debt or scaling challenge. We will prepare your Zyvane OS injection plan within 48 hours.
           </p>
           <Link href="/contact">
             <button className="bg-white text-black font-bold text-lg px-10 py-5 rounded-full hover:scale-105 transition-transform flex items-center gap-3 mx-auto">
-              Consult an Architect <ArrowRight className="w-5 h-5" />
+              Initiate Deployment <ArrowRight className="w-5 h-5" />
             </button>
           </Link>
         </div>

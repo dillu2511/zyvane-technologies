@@ -117,7 +117,7 @@ export default function CareersPage() {
                 What we look for
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-10">
-                We don&apos;t post roles to fill seats. When we hire, it is because we need the right person for a specific type of work. Here is what "right" means to us:
+                We don&apos;t post roles to fill seats. When we hire, it is because we need the right person for a specific type of work. Here is what &quot;right&quot; means to us:
               </p>
               <ul className="space-y-4">
                 {WHAT_WE_LOOK_FOR.map((item, i) => (
