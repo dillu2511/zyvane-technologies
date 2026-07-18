@@ -97,8 +97,8 @@ cp .env.example .env.local
 ## 📬 Contact
 
 **Zyvane Technologies**  
-Email: [hello@zyvane.com](mailto:hello@zyvane.com)  
-Website: [zyvane.com](https://zyvane.com)
+Email: [contact@zyvanetechnologies.com](mailto:contact@zyvanetechnologies.com)  
+Website: [zyvanetechnologies.com](https://www.zyvanetechnologies.com)
 
 ---
 

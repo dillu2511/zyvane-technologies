@@ -141,11 +141,11 @@ export default function CareersPage() {
               <p className="text-muted-foreground leading-relaxed mb-10">
                 If you are an exceptional engineer and want to be on our radar for future opportunities, send us your details. The best candidates come from inbound talent, not job boards.
               </p>
-              <Link href="/contact">
+              <a href="mailto:hire@zyvanetechnologies.com">
                 <span className="inline-flex items-center gap-2 bg-[#6366F1] hover:bg-[#5253D4] text-white font-bold rounded-full px-8 py-4 transition-colors">
-                  Express Interest <ArrowRight className="h-4 w-4" />
+                  Email your resume <ArrowRight className="h-4 w-4" />
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

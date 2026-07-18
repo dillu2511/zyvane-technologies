@@ -1,8 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-// Ensure the API key is available
-const resend = new Resend(process.env.RESEND_API_KEY || "re_dummy");
+import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
   try {
@@ -16,14 +13,24 @@ export async function POST(req: Request) {
       );
     }
 
-    // Send email via Resend
-    // Using Resend's onboarding domain until zyvanetechnologies.com is verified in Resend dashboard
-    const fromAddress = process.env.RESEND_FROM_EMAIL || "Zyvane Contact <onboarding@resend.dev>";
-    const toEmail = process.env.CONTACT_TO_EMAIL || "rajukumar87589@gmail.com";
+    // Configure Nodemailer transporter using Google Workspace SMTP
+    const transporter = nodemailer.createTransport({
+      host: process.env.MAIL_HOST || "smtp.gmail.com",
+      port: Number(process.env.MAIL_PORT) || 587,
+      secure: process.env.MAIL_ENCRYPTION === "ssl" || process.env.MAIL_PORT === "465", // true for 465, false for other ports
+      auth: {
+        user: process.env.MAIL_FROM_ADDRESS,
+        pass: process.env.MAIL_PASSWORD, // Google Workspace App Password
+      },
+    });
 
-    const { data, error } = await resend.emails.send({
+    const fromAddress = `"${process.env.MAIL_FROM_NAME || 'Zyvane Technologies'}" <${process.env.MAIL_FROM_ADDRESS}>`;
+    const toEmail = process.env.CONTACT_TO_EMAIL || process.env.MAIL_FROM_ADDRESS || "admin@zyvanetechnologies.com";
+
+    // Send email via Nodemailer
+    const info = await transporter.sendMail({
       from: fromAddress,
-      to: [toEmail],
+      to: toEmail,
       replyTo: email,
       subject: `[Zyvane Inquiry] New Project from ${name || email}`,
       html: `
@@ -43,14 +50,9 @@ export async function POST(req: Request) {
       `,
     });
 
-    if (error) {
-      console.error("[Resend Error]:", error);
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
-
-    return NextResponse.json({ success: true, message: "Payload transmitted successfully.", data });
-  } catch (error) {
+    return NextResponse.json({ success: true, message: "Payload transmitted successfully.", messageId: info.messageId });
+  } catch (error: any) {
     console.error("[Contact API Error]:", error);
-    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
+    return NextResponse.json({ error: error.message || "Internal Server Error" }, { status: 500 });
   }
 }

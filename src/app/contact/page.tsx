@@ -123,7 +123,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <strong className="text-foreground block mb-1">Direct Line</strong>
-                hello@zyvane.com<br />+91 7678483708
+                contact@zyvanetechnologies.com<br />+91 7678483708
               </div>
             </motion.div>
           </motion.div>

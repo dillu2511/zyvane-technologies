@@ -80,7 +80,7 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold mb-4 text-foreground">4. Data Retention</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Inquiry data submitted through our contact form is retained for the duration of the business relationship and for up to 2 years thereafter for reference purposes. You may request deletion of your data at any time by emailing us at{" "}
-                <a href="mailto:privacy@zyvane.com" className="text-[#6366F1] hover:underline">privacy@zyvane.com</a>.
+                <a href="mailto:contact@zyvanetechnologies.com" className="text-[#6366F1] hover:underline">contact@zyvanetechnologies.com</a>.
               </p>
             </div>
 
@@ -112,7 +112,7 @@ export default function PrivacyPage() {
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 To exercise any of these rights, contact us at{" "}
-                <a href="mailto:privacy@zyvane.com" className="text-[#6366F1] hover:underline">privacy@zyvane.com</a>.
+                <a href="mailto:contact@zyvanetechnologies.com" className="text-[#6366F1] hover:underline">contact@zyvanetechnologies.com</a>.
               </p>
             </div>
 
@@ -129,8 +129,8 @@ export default function PrivacyPage() {
                 Zyvane Technologies is a registered MSME under the Government of India (UDYAM-DL-11-0164014).<br/>
                 Registered Address: 168 C, Nangloi, Ashok Maholla Gali No 6, New Delhi 110041.<br/><br/>
                 For any privacy-related questions or requests, contact us at{" "}
-                <a href="mailto:privacy@zyvane.com" className="text-[#6366F1] hover:underline">
-                  privacy@zyvane.com
+                <a href="mailto:contact@zyvanetechnologies.com" className="text-[#6366F1] hover:underline">
+                  contact@zyvanetechnologies.com
                 </a>
                 . We respond to all privacy inquiries within 72 hours.
               </p>

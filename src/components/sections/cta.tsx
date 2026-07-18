@@ -44,7 +44,7 @@ export function CTA() {
             </Button>
             <Button size="lg" variant="outline" className="h-14 px-8 text-base rounded-full border-white/20 hover:bg-white/10 text-white w-full sm:w-auto">
               <Mail className="mr-2 h-4 w-4" />
-              hello@zyvane.com
+              contact@zyvanetechnologies.com
             </Button>
           </div>
         </motion.div>
