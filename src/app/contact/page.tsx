@@ -73,7 +73,7 @@ export default function ContactPage() {
       setLogs(prev => [
         ...prev,
         "[server] 200 OK: Payload received and verified.",
-        "[server] Email dispatched via Resend.",
+        "[server] Email dispatched via Secure SMTP.",
         "[system] Connection terminated securely.",
       ]);
       setSubmitted(true);
