@@ -24,7 +24,9 @@ export async function POST(req: Request) {
       },
     });
 
-    const fromAddress = `"${process.env.MAIL_FROM_NAME || 'Zyvane Technologies'}" <${process.env.MAIL_FROM_ADDRESS}>`;
+    const rawName = process.env.MAIL_FROM_NAME || 'Zyvane Technologies';
+    const cleanName = rawName.replace(/"/g, '').replace(/'/g, '');
+    const fromAddress = `"${cleanName}" <${process.env.MAIL_FROM_ADDRESS}>`;
     const toEmail = process.env.CONTACT_TO_EMAIL || process.env.MAIL_FROM_ADDRESS || "admin@zyvanetechnologies.com";
 
     // Send email via Nodemailer
@@ -53,6 +55,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true, message: "Payload transmitted successfully.", messageId: info.messageId });
   } catch (error: any) {
     console.error("[Contact API Error]:", error);
-    return NextResponse.json({ error: error.message || "Internal Server Error" }, { status: 500 });
+    return NextResponse.json({ error: error.message || "Internal Server Error", details: String(error) }, { status: 500 });
   }
 }
